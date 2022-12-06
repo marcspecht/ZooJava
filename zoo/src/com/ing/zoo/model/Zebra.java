@@ -1,28 +1,31 @@
-package com.ing.zoo;
+package com.ing.zoo.model;
 
-public class Lion implements Animal{
+import java.util.Random;
+
+public class Zebra implements Animal{
     public String name;
     public String helloText;
     public String eatText;
+    public String trick;
 
-    public Lion()
+    public Zebra()
     {
     }
 
     public void sayHello()
     {
-        helloText = "roooaoaaaaar";
+        helloText = "zebra zebra";
         System.out.println(helloText);
     }
 
-    public void eatMeat()
+    public void eatLeaves()
     {
-        eatText = "nomnomnom thx mate";
+        eatText = "munch munch zank yee bra";
         System.out.println(eatText);
     }
 
     @Override
-    public void eatLeaves() {
+    public void eatMeat() {
         throw new UnsupportedOperationException();
     }
 

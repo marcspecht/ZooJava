@@ -1,4 +1,4 @@
-package com.ing.zoo;
+package com.ing.zoo.model;
 
 public interface Animal {
     void sayHello();

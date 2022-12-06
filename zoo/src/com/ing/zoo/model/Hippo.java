@@ -1,4 +1,4 @@
-package com.ing.zoo;
+package com.ing.zoo.model;
 
 public class Hippo implements Animal{
     public String name;

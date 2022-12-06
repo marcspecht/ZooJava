@@ -6,6 +6,13 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 
+import com.ing.zoo.model.Animal;
+import com.ing.zoo.model.Hippo;
+import com.ing.zoo.model.Lion;
+import com.ing.zoo.model.Pig;
+import com.ing.zoo.model.Tiger;
+import com.ing.zoo.model.Zebra;
+
 public class Zoo {
     public static void main(String[] args)
     {
@@ -73,6 +80,7 @@ public class Zoo {
 
         Animal animal = optionalAnimal.get();
 
+        // Go over each possibility
         switch(command){
             case "hello":
                 animal.sayHello();
