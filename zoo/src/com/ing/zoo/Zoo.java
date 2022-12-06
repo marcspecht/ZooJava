@@ -45,13 +45,22 @@ public class Zoo {
 
         // Check if command is valid
         var command = inputArray[0];
+    
         if(inputArray.length > 2)
             command = inputArray[0] + " " +inputArray[1];
-        
+    
         boolean inputIsInList = Arrays.asList(commands).contains(command);
         if(!inputIsInList){
             System.out.println("Unknown command: " + command);
             System.exit(0);
+        }
+
+        // Check if command has animal
+        if(inputArray.length == 1){
+            if(command.equals("hello")){
+                everyoneHello(animals);
+                System.exit(0);
+            }
         }
 
         // Check if animal exists
@@ -94,5 +103,11 @@ public class Zoo {
         }
 
         scanner.close();
+    }
+
+    public static void everyoneHello(List<Animal> animals){
+        for(Animal animal : animals){
+            animal.sayHello();
+        }
     }
 }
