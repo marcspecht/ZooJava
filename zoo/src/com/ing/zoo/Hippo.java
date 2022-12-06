@@ -1,6 +1,6 @@
 package com.ing.zoo;
 
-public class Hippo {
+public class Hippo implements Animal{
     public String name;
     public String helloText;
     public String eatText;
@@ -19,5 +19,18 @@ public class Hippo {
     {
         eatText = "munch munch lovely";
         System.out.println(eatText);
+    }
+
+    public void eatMeat() {
+        throw new UnsupportedOperationException();
+    }
+
+    public void performTrick() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public String toString(){
+        return name;
     }
 }

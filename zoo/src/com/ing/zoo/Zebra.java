@@ -2,7 +2,7 @@ package com.ing.zoo;
 
 import java.util.Random;
 
-public class Zebra {
+public class Zebra implements Animal{
     public String name;
     public String helloText;
     public String eatText;
@@ -22,5 +22,20 @@ public class Zebra {
     {
         eatText = "munch munch zank yee bra";
         System.out.println(eatText);
+    }
+
+    @Override
+    public void eatMeat() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void performTrick() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public String toString(){
+        return name;
     }
 }
